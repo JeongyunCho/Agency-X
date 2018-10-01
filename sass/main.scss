@@ -2,10 +2,33 @@
 
 header{
     min-height:100vh;
-    background: url(../images/GraphicArt_background.jpg) no-repeat center center fixed;
+    background: $background-m;
+     @media only screen and (min-width: 640px) {
+        background: $background-t;
+    }
+      @media only screen and (min-width: 1200px) {
+        background: $background-d;
+    }
+
     background-size: cover;
     #agencyDes{
-       margin-top: 15%;
+       margin-top: 10vh;
+       color: $graphicArt-font-color;
+
+      
+       font : {
+           family: $p-graphicArt-font;
+           size: 5em;
+           weight: bold;
+       }
+        p{
+            line-height: 0.8em;
+            letter-spacing: 0.05em;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: 7.5em;
+        }
+     
     }
     #mainNav{
       
@@ -15,6 +38,14 @@ header{
         }
         ul{
             background-color: $nav-bgcolor;
+            li{
+                padding:0 .25em;
+                font-size: 3em;
+                @media only screen and (min-width: 1200px) {
+                    font-size: 6.6875em;
+                    padding:0 1em;
+                }
+            }
         }
     }
 }
