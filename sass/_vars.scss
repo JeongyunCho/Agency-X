@@ -1,6 +1,6 @@
 //Variables
 
-$h2-font:'Crete Round', 'sans-serif';
+$h3-font:'Crete Round', 'sans-serif';
 
 $p-font: 'Abel', 'sans-serif';
 
@@ -8,7 +8,7 @@ $nav-font: Helvetica, sans-serif;
 
 $nav-bgcolor: black;
 
-$h1-font: 'Arvo', 'sans-serif';
+$h2-font: 'Arvo', 'sans-serif';
 
 $nav-font-color: white;
 
@@ -22,17 +22,25 @@ $p-graphicArt-font: 'Bitter', serif;
 
 $graphicArt-font-color: #d2e93a;
 
-$h1-font-size-mobile: 100pt;
+$nav-font-size-mobile: 2.5em;
 
-$h2-font-size-mobile: 60pt;
+$h2-font-size-mobile: 4.25em;
 
-$p-font-size-mobile: 44pt;
+$h3-font-size-mobile: 3.75em;
 
-$h1-font-size-desktop: 130pt;
+$h4-font-size-mobile: 3.25em;
 
-$h2-font-size-desktop: 100pt;
+$p-font-size-mobile: 2.75em;
 
-$p-font-size-desktop: 48pt;
+$nav-font-size-desktop: 6.6875em;
+
+$h2-font-size-desktop: 6.125em;
+
+$h3-font-size-desktop: 6.25em;
+
+$h4-font-size-desktop: 5.9em;
+
+$p-font-size-desktop: 3em;
 
 //dev_cho-var
 $background-url-d: url(../images/GraphicArt_background.jpg);
