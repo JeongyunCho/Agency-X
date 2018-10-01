@@ -9,49 +9,91 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-   	<nav class="small-12 large-12 columns">
-		<a>About</a>
-		<a>Projects</a>
-	</nav>
-	<div class="small-12 large-12 columns">
-	  	<img src="images/GraphicArt_background.png" alt="Header">
-	</div>
-	<div class="small-8-centered large-6-centered columns">
-		<h1>Our Agency</h1>
-	</div>
-	<div class="small-6 large-5 columns">
-		<h2>About Us</h2>
-	</div>
-	<div class="small-10 small-centered large-10 large-centered columns">
-		<p>Hello! My name is Jeongyun Cho.</p>
-	</div>
-	<br>
-	<div class="small-10 small-centered large-10 large-centered columns">
-		<p>Hello! My name is Jorge Andrino. My main work is base on design. I posses experience in Photoshop, Illustrador, Cinema4D and Maya.</p>
-	</div>
-	<div class="small-6 small-offset-6 large-5 large-offset-7 columns">
-	  	<h2>Projects</h2>
-	</div>
-	<div class="small-6 small-centered large-2 large-centered columns">
-	  	<h2>Cho</h2>
-	</div>
-	<div class="small-10 small-centered large-10 large-centered columns">
-	  	<img src="images/Image1.png" alt="Image1">
-		<img src="images/Image2.png" alt="Image2">
-		<img src="images/Image3.png" alt="Image3">
-	</div>
-	<div class="small-6 small-centered large-2 large-centered columns">
-	  	<h2>Andrino</h2>
-	</div>
-	<div class="small-10 small-centered large-10 large-centered columns">
-	  	<img src="images/Image4.png" alt="Image4">
-		<img src="images/Image5.png" alt="Image5">
-		<img src="images/Image6.png" alt="Image6">
-	</div>
-	  
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
-  </body>
+  <h1 class="hide">Agency X</h1>
+  <header id="mainHeader">
+		<div data-sticky-container id="mainNav">
+			<nav data-sticky data-options="marginTop:0;" style="width:100%">
+				<ul class="menu align-center" data-magellan>
+					<li><a href="#first">About</a></li>
+					<li><a href="#second">Projects</a></li>
+				</ul>
+			</nav>
+		</div>
+			
+			<div id="agencyDes" class="text-center">
+			<h1>Our Blog</h1>
+			<h2 class="subheader">Such a Simple Blog Layout</h2>
+			</div>
+	</header>
+	
+
+
+		<article class="grid-container">
+			<div class="grid-x align-center">
+			<div class="cell medium-8 sections">
+			<div class="blog-post" id="first" data-magellan-target="first">
+			<h3>Awesome blog post title <small>3/6/2016</small></h3>
+			<img class="thumbnail" src="https://placehold.it/850x350">
+			<p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+			<div class="callout">
+			<ul class="menu simple">
+			<li><a href="#">Author: Mike Mikers</a></li>
+			<li><a href="#">Comments: 3</a></li>
+			</ul>
+			</div>
+			</div>
+			</div>
+			<div class="grid-x align-center">
+			<div class="cell medium-8">
+			<div class="blog-post">
+			<h3>Awesome blog post title <small>3/6/2016</small></h3>
+			<img class="thumbnail" src="https://placehold.it/850x350">
+			<p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+			<div class="callout">
+			<ul class="menu simple">
+			<li><a href="#">Author: Mike Mikers</a></li>
+			<li><a href="#">Comments: 3</a></li>
+			</ul>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="grid-x align-center">
+			<div class="cell medium-8">
+			<div class="blog-post">
+			<h3>Awesome blog post title <small>3/6/2016</small></h3>
+			<img class="thumbnail" src="https://placehold.it/850x350">
+			<p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+			<div class="callout">
+			<ul class="menu simple">
+			<li><a href="#">Author: Mike Mikers</a></li>
+			<li><a href="#">Comments: 3</a></li>
+			</ul>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="grid-x align-center">
+			<div class="cell medium-8">
+			<div class="blog-post">
+			<h3>Awesome blog post title <small>3/6/2016</small></h3>
+			<img class="thumbnail" src="https://placehold.it/850x350">
+			<p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+			<div class="callout">
+			<ul class="menu simple">
+			<li><a href="#">Author: Mike Mikers</a></li>
+			<li><a href="#">Comments: 3</a></li>
+			</ul>
+			</div>
+			</div>
+			</div>
+			</div>
+		</article>
+
+
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/what-input.js"></script>
+	<script src="js/vendor/foundation.js"></script>
+	<script src="js/app.js"></script>
+	</body>
 </html>
