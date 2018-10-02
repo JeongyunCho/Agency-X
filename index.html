@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="css/foundation.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Abel%7CArvo%7CBitter%7CCrete+Round" rel="stylesheet">
-  </head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
   <body>
+		<div id="lightbox">
+				<div id="lightbox_content">
+				  <div id="close"><i class="fas fa-times fa-3x"></i></div>
+				  <img id="imgBox" src="" alt="portfolio pieces of our Agency Members">
+				</div>
+			  </div>
   <h1 class="hide">Agency X</h1>
   <header id="mainHeader">
 		<div data-sticky-container>
@@ -31,8 +38,10 @@
 	</header>
 	<!--header ends here-->
 
+
 		<div id="content" class="grid-container">
 			<div class="grid-x align-center">
+				
 				<div id="ourAgency" class="cell medium-10 text-center">
 					<h2>OUR<br/>AGENCY</h2>
 				</div>
@@ -62,25 +71,26 @@
 						</div>
 					
 						<div class="cell medium-10">
-						<img src="images/Image1.png" alt="portfolio piece of Cho-1">
+						<div class="clickme"> <img src="images/Image1.png" alt="portfolio piece of Cho-1"></div>
 						<!--data intechange-->
-						<img src="images/Image2.png"  alt="portfolio piece of Cho-2">
-						<img src="images/Image3.png"  alt="portfolio piece of Cho-3">
+						<div class="clickme"> <img src="images/Image2.png"  alt="portfolio piece of Cho-2"></div>
+						<div class="clickme"> <div class="clickme"> <img src="images/Image3.png"  alt="portfolio piece of Cho-3"></div>
 						</div>
 				</div>
 				<div class="grid-x align-center">
 						<div class="cell medium-10">
 								<h4>Andrino</h4>
 							<div class="cell medium-10">
-									<img src="images/Image4.png" alt="portfolio piece of Andrino-1">
-									<img src="images/Image5.png" alt="portfolio piece of Andrino-2">
-									<img src="images/Image6.png" alt="portfolio piece of Andrino-3">
+									<div class="clickme"><img src="images/Image4.png" alt="portfolio piece of Andrino-1"></div>
+									<div class="clickme"><img src="images/Image5.png" alt="portfolio piece of Andrino-2"></div>
+									<div class="clickme"><img src="images/Image6.png" alt="portfolio piece of Andrino-3"></div>
 							</div>
 					</div>
 	</div>
+
 			
 	</div>			
-
+	
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/vendor/what-input.js"></script>
 	<script src="js/vendor/foundation.js"></script>
