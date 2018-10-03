@@ -30,7 +30,9 @@ $h3-font-size-mobile: 3.75em;
 
 $h4-font-size-mobile: 3.25em;
 
-$p-font-size-mobile: 1.75em;
+$p-font-size-mobile: 2em;
+
+$small-p-font-size-mobile: 1em;
 
 $nav-font-size-desktop: 6.6875em;
 
@@ -40,7 +42,9 @@ $h3-font-size-desktop: 6.25em;
 
 $h4-font-size-desktop: 5.9em;
 
-$p-font-size-desktop: 3em;
+$p-font-size-desktop: 2.9em;
+
+$small-p-font-size-desktop: 2em;
 
 //dev_cho-var
 $background-url-d: url(../images/GraphicArt_background.jpg);
@@ -58,3 +62,17 @@ $background-d: linear-gradient(
   $background-m: linear-gradient(
     rgba(119, 88, 137, 0.6),rgba(119, 88, 137, 0.6)
   ), $background-url-m no-repeat center center fixed;
+
+  //mixin
+  @mixin lightboxBtn($right:2em, $top:2em, $space:3em, $btnBkgrd:rgba(0, 0, 0, 0.5)) {
+    position: absolute;
+    right: $right;
+    top: $top;
+    background: $btnBkgrd;
+    height: $space;
+    width: $space;
+    border-radius: 1em;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+  }

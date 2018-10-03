@@ -99,6 +99,12 @@ header{
             font-size: $p-font-size-desktop;
         }
     }
+    .small-p{
+            font-size: .6em;
+             @media only screen and (min-width: 1200px) {
+            font-size: .7em;
+            }
+        }
     img{
         display: block;
         margin: 1em auto;
@@ -116,28 +122,43 @@ header{
     left: 0px;
     background: rgba(0, 0, 0, 0.8);
     display: none;
-    &.open {
-        display: block;
-      }
-      #lightbox_content {
-        text-align: center;
-        margin: 10vh;
-      }
-      #imgBox{
-        max-height: 80vh;
-    }
-    #close {
-        position: absolute;
-        right: 2em;
-        top: 2em;
-        background: rgba(0, 0, 0, 0.5);
-        height: 3em;
-        width: 3em;
-        border-radius: 1em;
-        text-align: center;
-        color: #ffffff;
-        cursor: pointer;
-      }
+        &.open {
+            display: block;
+        }
+        #lightbox_content {
+            text-align: center;
+            margin: 10vh;
+            #close {
+              @include lightboxBtn;
+            }
+            #left {
+                @include lightboxBtn(0,40vh,5em,rgba(0, 0, 0, 0.1));
+                left: 3em;
+            }
+            #right {
+                @include lightboxBtn(3em,40vh,5em,rgba(0, 0, 0, 0.1));
+            }
+            #imgBox{
+                max-height: 70vh;
+            }
+            #textBox{
+                position: relative;
+                top: -5vh;
+                p{
+                    line-height: 1em;
+                }
+                #desc
+                {
+                    size: $small-p-font-size-mobile;
+                     @media only screen and (min-width: 1200px) {
+                    font-size: $small-p-font-size-desktop;
+                    }
+                }
+            }
+        }
+      
+    
+     
   }//lightbox Ends
   
  
