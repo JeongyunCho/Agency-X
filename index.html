@@ -6,52 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agency X</title>
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel%7CArvo%7CBitter%7CCrete+Round" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
   <body>
-   	<nav class="small-12 large-12 columns">
-		<a>About</a>
-		<a>Projects</a>
-	</nav>
-	<div class="small-12 large-12 columns">
-	  	<img src="images/GraphicArt_background.png" alt="Header">
-	</div>
-	<div class="small-8-centered large-6-centered columns">
-		<h1>Our Agency</h1>
-	</div>
-	<div class="small-6 large-5 columns">
-		<h2>About Us</h2>
-	</div>
-	<div class="small-10 small-centered large-10 large-centered columns">
-		<p>Hello! My name is Jeongyun Cho.</p>
-	</div>
-	<br>
-	<div class="small-10 small-centered large-10 large-centered columns">
-		<p>Hello! My name is Jorge Andrino. My main work is base on design. I posses experience in Photoshop, Illustrador, Cinema4D and Maya.</p>
-	</div>
-	<div class="small-6 small-offset-6 large-5 large-offset-7 columns">
-	  	<h2>Projects</h2>
-	</div>
-	<div class="small-6 small-centered large-2 large-centered columns">
-	  	<h2>Cho</h2>
-	</div>
-	<div class="small-10 small-centered large-10 large-centered columns">
-	  	<img src="images/Image1.png" alt="Image1">
-		<img src="images/Image2.png" alt="Image2">
-		<img src="images/Image3.png" alt="Image3">
-	</div>
-	<div class="small-6 small-centered large-2 large-centered columns">
-	  	<h2>Andrino</h2>
-	</div>
-	<div class="small-10 small-centered large-10 large-centered columns">
-	  	<img src="images/Image4.png" alt="Image4">
-		<img src="images/Image5.png" alt="Image5">
-		<img src="images/Image6.png" alt="Image6">
-	</div>
-	  
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
-  </body>
+  <h1 class="hide">Agency X</h1>
+  <header id="mainHeader">
+		<div data-sticky-container>
+			<nav id="mainNav" data-sticky data-options="marginTop:0;" style="width:100%" data-sticky-on="small">
+				<h2 class="hide">Main Navigation</h2>
+				<ul class="menu align-center" data-magellan data-offset="100">
+					<li><a href="#about">About</a></li>
+					<li><a href="#project">Projects</a></li>
+				</ul>
+			</nav>
+		</div>
+			
+			<div id="agencyDes" class="text-center">
+				<p>We</p>
+				<p>Innovate</p>
+				<p>Your</p>
+				<p>Life</p>
+			</div>
+	</header>
+	<!--header ends here-->
+
+
+	<div id="content" class="grid-container">
+		<div>
+			<div class="grid-x align-center">
+				<div id="ourAgency" class="cell medium-10 text-center">
+					<h2>OUR<br/>AGENCY</h2>
+				</div>
+
+			<div class="cell medium-10">
+				<div class="blog-post" id="about" data-magellan-target="about">
+				<h3>ABOUT US</h3>
+				<div class="pBkgrd"> 
+						<p>Hello! My name is Jeongyun Cho - Developer of the Site</p>
+						<div class="small-p"><p>I've always been drawn to the overlap between design and development. My skills are broad: from ux to design, front end to back end development.</p></div>
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="grid-x align-center">
+				<div class="cell medium-10">
+					<div class="pBkgrd"> 
+							<p>Hello! My name is Jorge Andrino - Designer of the Site</p>
+							<div class="small-p"><p>my passion for design and my love to see how i create thing that move by their own will is what motivates me to keep going foward”</p></div>
+					</div>
+				</div>
+			</div>
+		</div><!--About Us Ends-->
+
+		<div id="lightbox">
+				<div id="lightbox_content">
+				  <div id="close"><i class="fas fa-times fa-3x"></i></div>
+				  <div id="left"><i class="fas fa-chevron-left fa-5x"></i></div>
+				  <div id="right"><i class="fas fa-chevron-right fa-5x"></i></div>
+				<img id="imgBox" src="images/" alt="portfolio pieces of our Agency Members">
+				  <div id="textBox">
+					<p id="name">Jeongyun Cho</p>
+					<p id="desc">Project1</p>
+				  </div>
+				</div>
+		</div><!--Light Box Ends-->
+
+		<div class="grid-x align-center">
+		<div class="cell medium-10">
+			<div class="blog-post" id="project" data-magellan-target="project"></div>
+				<div class="right"><h3>Project</h3></div>
+				<h4>Cho</h4>
+				</div>
+				
+			<div class="cell medium-10"><!--data interchange used to load different size of image file-->
+				<div id="cho1" class="clickme"><img data-interchange="[images/cho1_s.png, small], [images/cho1_l.png, medium]" alt="Cho Portfolio Piece 1"></div>
+				<div id="cho2" class="clickme"> <img data-interchange="[images/cho2_s.png, small], [images/cho2_l.png, medium]" alt="Cho Portfolio Piece 2"></div>
+			</div>
+			<div class="grid-x align-center">
+			<div class="cell medium-10">
+				<h4>Andrino</h4>
+			</div>
+			<div class="cell medium-10">
+				<div id="andrino1" class="clickme"><img data-interchange="[images/andrino1_s.png, small], [images/andrino1_l.png, medium]" alt="Andrino Portfolio Piece 1"></div>
+				<div id="andrino2" class="clickme"><img data-interchange="[images/andrino2_s.png, small], [images/andrino2_l.png, medium]" alt="Andrino Portfolio Piece 2"></div>
+				<div id="andrino3" class="clickme"><img data-interchange="[images/andrino3_s.png, small], [images/andrino3_l.png, medium]" alt="Andrino Portfolio Piece 3"></div>
+			</div>
+			</div>
+			</div><!--project section ends-->
+	</div><!--content section ends-->
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/what-input.js"></script>
+	<script src="js/vendor/foundation.js"></script>
+	<script src="js/app.js"></script>
+	</body>
 </html>

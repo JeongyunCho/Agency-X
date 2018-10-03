@@ -1,3 +1,172 @@
 @import '_vars';
 
-//body { background-color: $background-color;}
+header{
+    min-height:100vh;
+    background: $background-m;
+     @media only screen and (min-width: 640px) {
+        background: $background-t;
+    }
+      @media only screen and (min-width: 1200px) {
+        background: $background-d;
+    }
+
+    background-size: cover;
+    #agencyDes{
+       margin-top: 10vh;
+       color: $graphicArt-font-color;
+      
+       font : {
+           family: $p-graphicArt-font;
+           size: 5em;
+           weight: bold;
+       }
+        p{
+            line-height: 0.8em;
+            letter-spacing: 0.05em;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: 7.5em;
+        }
+     
+    }
+    #mainNav{
+      
+        font-family: $nav-font;
+        a{
+            color: $nav-font-color;
+        }
+        ul{
+            background-color: $nav-bgcolor;
+            li{
+                padding:0 .25em;
+                font-size: $nav-font-size-mobile;
+                @media only screen and (min-width: 1200px) {
+                    font-size: $nav-font-size-desktop;
+                    padding:0 1em;
+                }
+            }
+        }
+    }
+}
+//header ends
+
+//content Area
+#content{
+    #ourAgency{
+        margin-bottom: 3em;
+    }
+    .right{
+        text-align: right;
+    }
+    .pBkgrd{
+        background-color: black;
+    }
+    h2{
+        font : {
+            family: $h2-font;
+            size: $h2-font-size-mobile;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: $h2-font-size-desktop;
+        }
+    }
+    h3{
+        font : {
+            family: $h3-font;
+            size: $h3-font-size-mobile;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: $h3-font-size-desktop;
+        }
+    }
+    h4{
+        text-align: center;
+        font : {
+            family: $h3-font;
+            size: $h4-font-size-mobile;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: $h4-font-size-desktop;
+        }
+    }
+    p{
+        color:white;
+        font : {
+            family: $p-font;
+            size: $p-font-size-mobile;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: $p-font-size-desktop;
+        }
+    }
+    .small-p{
+            font-size: .6em;
+             @media only screen and (min-width: 1200px) {
+            font-size: .7em;
+            }
+        }
+    img{
+        display: block;
+        margin: 1em auto;
+        @media only screen and (min-width: 1200px) {
+            margin: 3em auto;
+    }
+    }
+}//content Area Ends
+//lightbox
+#lightbox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+        &.open {
+            display: block;
+        }
+        #lightbox_content {
+            text-align: center;
+            margin: 10vh;
+            #close {
+              @include lightboxBtn;
+            }
+            #left {
+                @include lightboxBtn(0,40vh,5em,rgba(0, 0, 0, 0.1));
+                left: 3em;
+            }
+            #right {
+                @include lightboxBtn(3em,40vh,5em,rgba(0, 0, 0, 0.1));
+            }
+            #imgBox{
+                max-height: 70vh;
+            }
+            #textBox{
+                position: relative;
+                top: -5vh;
+                p{
+                    line-height: 1em;
+                }
+                #desc
+                {
+      
+                     @media only screen and (min-width: 1200px) {
+                    font-size: $small-p-font-size-desktop;
+                    }
+                }
+            }
+        }
+      
+    
+     
+  }//lightbox Ends
+  
+ 
+  
+
+
+  
+
+  
+  
+

@@ -1,14 +1,14 @@
 //Variables
 
-$h2-font: Menlo, sans-serif;
+$h3-font:'Crete Round', 'sans-serif';
 
-$p-font: Raleway, sans-serif;
+$p-font: 'Abel', 'sans-serif';
 
 $nav-font: Helvetica, sans-serif;
 
 $nav-bgcolor: black;
 
-$h1-font: Big Casion, sans-serif;
+$h2-font: 'Arvo', 'sans-serif';
 
 $nav-font-color: white;
 
@@ -18,20 +18,61 @@ $lightboxNav-bgcolor: #343434;
 
 $graphicArt-color: #32004b;
 
-$h1-graphicArt-font: Superclarendon, sans-serif;
+$p-graphicArt-font: 'Bitter', serif;
 
 $graphicArt-font-color: #d2e93a;
 
-$h1-font-size-mobile: 100pt;
+$nav-font-size-mobile: 2.5em;
 
-$h2-font-size-mobile: 60pt;
+$h2-font-size-mobile: 4.25em;
 
-$p-font-size-mobile: 44pt;
+$h3-font-size-mobile: 3.75em;
 
-$h1-font-size-desktop: 130pt;
+$h4-font-size-mobile: 3.25em;
 
-$h2-font-size-desktop: 100pt;
+$p-font-size-mobile: 2em;
 
-$p-font-size-desktop: 48pt;
+$small-p-font-size-mobile: 1em;
 
+$nav-font-size-desktop: 6.6875em;
 
+$h2-font-size-desktop: 6.125em;
+
+$h3-font-size-desktop: 6.25em;
+
+$h4-font-size-desktop: 5.9em;
+
+$p-font-size-desktop: 2.9em;
+
+$small-p-font-size-desktop: 2em;
+
+//dev_cho-var
+$background-url-d: url(../images/GraphicArt_background.jpg);
+$background-url-t: url(../images/GraphicArt_background-t.jpeg);
+$background-url-m: url(../images/GraphicArt_background-m.jpeg);
+
+$background-d: linear-gradient(
+    rgba(119, 88, 137, 0.6),rgba(119, 88, 137, 0.6)
+  ), $background-url-d no-repeat center center fixed;
+
+  $background-t: linear-gradient(
+    rgba(119, 88, 137, 0.6),rgba(119, 88, 137, 0.6)
+  ), $background-url-t no-repeat center center fixed;
+
+  $background-m: linear-gradient(
+    rgba(119, 88, 137, 0.6),rgba(119, 88, 137, 0.6)
+  ), $background-url-m no-repeat center center fixed;
+
+  //mixin
+  @mixin lightboxBtn($right:2em, $top:2em, $space:3em, $btnBkgrd:rgba(0, 0, 0, 0.5)) {
+    position: absolute;
+    right: $right;
+    top: $top;
+    background: $btnBkgrd;
+    height: $space;
+    width: $space;
+    border-radius: 1em;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+  }
