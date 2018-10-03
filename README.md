@@ -47,5 +47,4 @@ This project is a rebranding for the website PUREVOLUME, for Hive Media, by seco
 
 ## Future Plan
 
-* Developer Note
-Design of Header and About section can be improved, javascript for lightbox could be written differently.
+* Developer Note - Design of Header and About section can be improved, javascript for lightbox could be written differently.
