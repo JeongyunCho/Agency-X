@@ -149,7 +149,7 @@ header{
                 }
                 #desc
                 {
-                    size: $small-p-font-size-mobile;
+      
                      @media only screen and (min-width: 1200px) {
                     font-size: $small-p-font-size-desktop;
                     }
