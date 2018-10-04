@@ -1,0 +1,63 @@
+//content Area
+#content{
+    #ourAgency{
+        margin-bottom: 3em;
+    }
+    .right{
+        text-align: right;
+    }
+    .pBkgrd{
+        background-color: black;
+    }
+    h2{
+        font : {
+            family: $h2-font;
+            size: $h2-font-size-mobile;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: $h2-font-size-desktop;
+        }
+    }
+    h3{
+        font : {
+            family: $h3-font;
+            size: $h3-font-size-mobile;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: $h3-font-size-desktop;
+        }
+    }
+    h4{
+        text-align: center;
+        font : {
+            family: $h3-font;
+            size: $h4-font-size-mobile;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: $h4-font-size-desktop;
+        }
+    }
+    p{
+        color:white;
+        font : {
+            family: $p-font;
+            size: $p-font-size-mobile;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: $p-font-size-desktop;
+        }
+    }
+    .small-p{
+            font-size: .6em;
+             @media only screen and (min-width: 1200px) {
+            font-size: .7em;
+            }
+        }
+    img{
+        display: block;
+        margin: 1em auto;
+        @media only screen and (min-width: 1200px) {
+            margin: 3em auto;
+    }
+    }
+}//content Area Ends
