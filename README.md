@@ -22,6 +22,7 @@ You're ready to go!
 * [Foundation 6](https://foundation.zurb.com/sites.html) - The web framework used - Zurb Foundation 6 for sites
 * [Git](https://git-scm.com/)
 * [Sass](https://sass-lang.com/)
+* [Gulp](https://gulpjs.com/)
 
 
 
