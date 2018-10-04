@@ -1,0 +1,49 @@
+header{
+    min-height:100vh;
+    background: $background-m;
+     @media only screen and (min-width: 640px) {
+        background: $background-t;
+    }
+      @media only screen and (min-width: 1200px) {
+        background: $background-d;
+    }
+
+    background-size: cover;
+    #agencyDes{
+       margin-top: 10vh;
+       color: $graphicArt-font-color;
+      
+       font : {
+           family: $p-graphicArt-font;
+           size: 5em;
+           weight: bold;
+       }
+        p{
+            line-height: 0.8em;
+            letter-spacing: 0.05em;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: 7.5em;
+        }
+     
+    }
+    #mainNav{
+      
+        font-family: $nav-font;
+        a{
+            color: $nav-font-color;
+        }
+        ul{
+            background-color: $nav-bgcolor;
+            li{
+                padding:0 .25em;
+                font-size: $nav-font-size-mobile;
+                @media only screen and (min-width: 1200px) {
+                    font-size: $nav-font-size-desktop;
+                    padding:0 1em;
+                }
+            }
+        }
+    }
+}
+//header ends
